@@ -1,0 +1,1 @@
+# NTFY Server Bootstrap
