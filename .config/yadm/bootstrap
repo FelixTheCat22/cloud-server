@@ -25,6 +25,9 @@ sudo apt-get update
 # Install Docker Packages
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
+# Create docker network
+sudo docker network create nginxnet
+
 # Start docker
 cd nginx-proxy-manager
 sudo docker compose up -d
