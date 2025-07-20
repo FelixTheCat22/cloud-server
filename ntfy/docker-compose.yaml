@@ -6,6 +6,9 @@ services:
       - serve
     environment:
       - TZ=CET    # optional: set desired timezone
+      - NTFY_BEHIND_PROXY: true
+      - NTFY_CACHE_FILE: /var/lib/ntfy/cache.db
+      - NTFY_ATTACHMENT_CACHE_DIR: /var/lib/ntfy/attachments
     #user: UID:GID # optional: replace with your own user/group or uid/gid
     volumes:
       - ./cache/ntfy:/var/cache/ntfy
